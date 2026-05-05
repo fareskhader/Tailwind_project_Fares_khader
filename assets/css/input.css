@@ -1,1 +1,34 @@
 @import "tailwindcss";
+
+
+@theme {
+    --color-background: #252B42;
+    --color-primary: #252b42;
+    --color-teprimary: #162839;
+    --color-foreground: #FFF;
+    --color-card-background: #FFFFFF;
+    --color-muted: #737373;
+    --font-montserrat: 'Montserrat';
+    --breakpoint-xs: 460px;
+    --font-inter:'Inter';
+    --color-ashen:#64748B;
+    --color-boldashen:#0F172A;
+
+}
+body
+{
+
+}
+.container
+{
+@apply mx-auto;
+}
+
+ .mycontainer {
+        @apply mx-[32px];
+
+    }
+
+    @utility row {
+    @apply flex items-center
+}
