@@ -13,7 +13,10 @@
     --font-inter:'Inter';
     --color-ashen:#64748B;
     --color-boldashen:#0F172A;
-
+    --color-offwhite:#F6F3ED;
+    --color-Dark_Taupe:#635E55;
+    --color-Cool_Slate_Gray:#676259;
+    --color-Light_Steel_Blue:#96A9BE;
 }
 body
 {
@@ -31,4 +34,7 @@ body
 
     @utility row {
     @apply flex items-center
+}
+   @utility column {
+    @apply flex flex-col
 }
