@@ -10,33 +10,38 @@
     --color-muted: #737373;
     --font-montserrat: 'Montserrat';
     --breakpoint-xs: 460px;
-    --font-inter:'Inter';
-    --color-ashen:#64748B;
-    --color-boldashen:#0F172A;
-    --color-offwhite:#F6F3ED;
-    --color-Dark_Taupe:#635E55;
-    --color-Cool_Slate_Gray:#676259;
-    --color-Light_Steel_Blue:#96A9BE;
-        --color-Medium_Slate_Gray:#74777D;
+    --font-inter: 'Inter';
+    --color-ashen: #64748B;
+    --color-boldashen: #0F172A;
+    --color-offwhite: #F6F3ED;
+    --color-Dark_Taupe: #635E55;
+    --color-Cool_Slate_Gray: #676259;
+    --color-Light_Steel_Blue: #96A9BE;
+    --color-Medium_Slate_Gray: #74777D;
+    --color-cool_charcoal_gray: #43474C;
+    --color-Very_Light_Mint_Green: #DCFCE7;
+    --color-Light_Creamy_Yellow: #FEF9C3;
+
+
+
 
 }
-body
-{
 
-}
-.container
-{
-@apply mx-auto;
+body {}
+
+.container {
+    @apply mx-auto;
 }
 
- .mycontainer {
-        @apply mx-[32px];
+.mycontainer {
+    @apply mx-[32px];
 
-    }
+}
 
-    @utility row {
+@utility row {
     @apply flex items-center
 }
-   @utility column {
+
+@utility column {
     @apply flex flex-col
 }
