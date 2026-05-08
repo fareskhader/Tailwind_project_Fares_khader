@@ -7,7 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-200: oklch(92.4% 0.12 95.746);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-white: #fff;
@@ -36,6 +35,7 @@
     --color-Dark_Taupe: #635E55;
     --color-Cool_Slate_Gray: #676259;
     --color-Light_Steel_Blue: #96A9BE;
+    --color-Medium_Slate_Gray: #74777D;
   }
 }
 @layer base {
@@ -273,9 +273,6 @@
   .w-\[80\%\] {
     width: 80%;
   }
-  .w-\[80\] {
-    width: 80;
-  }
   .w-\[128px\] {
     width: 128px;
   }
@@ -314,6 +311,9 @@
   }
   .gap-\[4px\] {
     gap: 4px;
+  }
+  .gap-\[6px\] {
+    gap: 6px;
   }
   .gap-\[8px\] {
     gap: 8px;
@@ -384,9 +384,6 @@
   .bg-\[\#FAFAF9\] {
     background-color: #FAFAF9;
   }
-  .bg-amber-200 {
-    background-color: var(--color-amber-200);
-  }
   .bg-offwhite {
     background-color: var(--color-offwhite);
   }
@@ -429,6 +426,9 @@
   .py-\[15px\] {
     padding-block: 15px;
   }
+  .py-\[40px\] {
+    padding-block: 40px;
+  }
   .py-\[48px\] {
     padding-block: 48px;
   }
@@ -449,9 +449,6 @@
   }
   .py-\[94px\] {
     padding-block: 94px;
-  }
-  .py-\[480px\] {
-    padding-block: 480px;
   }
   .pt-3 {
     padding-top: calc(var(--spacing) * 3);
@@ -550,6 +547,9 @@
   .text-Light_Steel_Blue {
     color: var(--color-Light_Steel_Blue);
   }
+  .text-Medium_Slate_Gray {
+    color: var(--color-Medium_Slate_Gray);
+  }
   .text-\[\#0F172A\] {
     color: #0F172A;
   }
@@ -587,14 +587,6 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
-  .duration-75 {
-    --tw-duration: 75ms;
-    transition-duration: 75ms;
-  }
-  .duration-100 {
-    --tw-duration: 100ms;
-    transition-duration: 100ms;
-  }
   .duration-150 {
     --tw-duration: 150ms;
     transition-duration: 150ms;
@@ -606,10 +598,6 @@
   .duration-500 {
     --tw-duration: 500ms;
     transition-duration: 500ms;
-  }
-  .duration-1000 {
-    --tw-duration: 1000ms;
-    transition-duration: 1000ms;
   }
   .hover\:bg-teprimary\/80 {
     &:hover {
@@ -713,12 +701,6 @@
       border-width: 1px;
     }
   }
-  .max-lg\:border-2 {
-    @media (width < 64rem) {
-      border-style: var(--tw-border-style);
-      border-width: 2px;
-    }
-  }
   .max-lg\:bg-offwhite {
     @media (width < 64rem) {
       background-color: var(--color-offwhite);
@@ -790,16 +772,6 @@
       gap: calc(var(--spacing) * 4);
     }
   }
-  .max-md\:gap-6 {
-    @media (width < 48rem) {
-      gap: calc(var(--spacing) * 6);
-    }
-  }
-  .max-md\:gap-12 {
-    @media (width < 48rem) {
-      gap: calc(var(--spacing) * 12);
-    }
-  }
   .max-md\:gap-\[8px\] {
     @media (width < 48rem) {
       gap: 8px;
@@ -813,24 +785,6 @@
   .max-md\:gap-\[16px\] {
     @media (width < 48rem) {
       gap: 16px;
-    }
-  }
-  .max-md\:border-0 {
-    @media (width < 48rem) {
-      border-style: var(--tw-border-style);
-      border-width: 0px;
-    }
-  }
-  .max-md\:border-1 {
-    @media (width < 48rem) {
-      border-style: var(--tw-border-style);
-      border-width: 1px;
-    }
-  }
-  .max-md\:border-2 {
-    @media (width < 48rem) {
-      border-style: var(--tw-border-style);
-      border-width: 2px;
     }
   }
   .max-md\:py-\[8px\] {
@@ -882,16 +836,6 @@
   .md\:grid-cols-3 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-  }
-  .md\:grid-cols-4 {
-    @media (width >= 48rem) {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-  }
-  .lg\:grid {
-    @media (width >= 64rem) {
-      display: grid;
     }
   }
   .lg\:w-\[70\%\] {
