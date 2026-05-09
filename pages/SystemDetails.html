@@ -50,16 +50,16 @@
                 </ul>
             </div>
         </section>
-        <section class="details_page_second_section row mycontainer bg-offwhite">
-            <div class="left_section column gap-[32px] bg-amber-300">
-                <img src="../assets/images/system_details_images/Diagram Placeholder.svg" alt="">
-                <div class="p-[32px] column gap-[24px]">
-                    <span class="text-[11px] tracking-wider ml-4 font[600]">ACTIVE SYSTEM COMPONENTS</span>
+        <section class="details_page_second_section gap-[32px] grid md:grid-cols-1 lg:grid-cols-2  px-[16px] m-auto lg:mycontainer ">
+            <div class="left_section column gap-[32px] ">
+                <img class="max-lg:w-[90%] max-lg:m-auto" src="../assets/images/system_details_images/Diagram Placeholder.svg" alt="">
+                <div class="p-[24px] column gap-[24px] bg-offwhite rounded-lg">
+                    <span class="text-[11px] tracking-wider text-ashen ml-4 font[600]">ACTIVE SYSTEM COMPONENTS</span>
                     <div class="bg-white row py-[20px] px-[16px] justify-between rounded-xl">
                         <div class="row gap-[10px]">
                             <img class="w-[20px]" src="../assets/images//logos/details_page_logos/radio_icon.svg"
                                 alt="camera_icon">
-                            <span class="font-[500] leading-1 tracking-wider">LIDAR Dust Sensors (4x)</span>
+                            <span class="font-[500] ">LIDAR Dust Sensors (4x)</span>
                         </div>
                         <div>
                             <span
@@ -70,7 +70,7 @@
                         <div class="row gap-[10px]">
                             <img class="w-[20px]" src="../assets/images/logos/details_page_logos/Ai_icon.svg"
                                 alt="camera_icon">
-                            <span class="font-[500] leading-1 tracking-wider">Edge Processing Unit</span>
+                            <span class="font-[500]  ">Edge Processing Unit</span>
                         </div>
                         <div>
                             <span
@@ -82,7 +82,7 @@
                         <div class="row gap-[10px]">
                             <img class="w-[20px]" src="../assets/images/logos/details_page_logos/cleaning_icon.svg"
                                 alt="camera_icon">
-                            <span class="font-[500] leading-1 tracking-wider">Robotic Squeegee Hub</span>
+                            <span class="font-[500]  ">Robotic Squeegee Hub</span>
                         </div>
                         <div>
                             <span
@@ -92,8 +92,44 @@
 
                 </div>
             </div>
-            <div class="right_section">
-
+            <div class="right_section column gap-[32px]">
+                <div class="column items-start gap-[16px]">
+                <div class="row gap-3">
+                    <span class="text-white text-[10px] tracking-wider bg-Dark_Navy_Blue px-2 py-[2px] rounded-md gap-[12px]">ACTIVE</span>
+                    <span class="text-Medium_Slate_Gray tracking-wider font-[10px]">SYSTEM ID: DS-2024-X</span>
+                </div>
+                <h2 class="text-[26px]">
+                    AI-Based Dust Detection System
+                </h2>
+                 <p class="text-Dark_Taupe   w-[90%] ">Real-time particulate analysis using neural networks to optimize
+cleaning cycles and maximize photovoltaic output across the
+primary array.</p>
+                </div>
+                <div class="grid  md:grid-cols-3 gap-[16px] ">
+                    <div class="column bg-offwhite gap-[4px] p-6 rounded-lg">
+                        <span class="text-Medium_Slate_Gray text-[11px] leading-[16.5px] tracking-[0.88px]" >EFFICIENCY</span>
+                        <span class="text-[24px]  font-[600]">98.4%</span>
+                        
+                        
+                        <span class="text-Success_Green text-[10px]">+1.2% VS PREV</span>
+                    </div>
+                    <div class="column bg-offwhite gap-[4px] p-6 rounded-lg">
+                        <span class="text-Medium_Slate_Gray text-[11px] leading-[16.5px] tracking-[0.88px]" >DUST LEVEL</span>
+                        <div>
+                        <span class="text-[24px]  font-[700]">12</span>
+                        <span class="text-Medium_Slate_Gray text-[14px]">mg/m²</span>
+                        </div>
+                        <span class="text-[#EA580C] text-[10px]">MODERATE</span>
+                    </div>
+                   <div class="column bg-offwhite gap-[4px] p-6 rounded-lg">
+                        <span class="text-Medium_Slate_Gray text-[11px] leading-[16.5px] tracking-[0.88px]" >LAST CLEAN</span>
+                        <div>
+                        <span class="text-[24px]  font-[700]">4h</span>
+                        <span class="text-Medium_Slate_Gray text-[14px]">ago</span>
+                        </div>
+                        <span class="text-Medium_Slate_Gray text-[10px]">AUTO MODE</span>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
