@@ -23,7 +23,8 @@
     --color-Light_Creamy_Yellow: #FEF9C3;
     --color-Dark_Navy_Blue: #162839;
     --color-Success_Green: #16A34A;
-
+    --color-Midnight_Blue: #2C3E50; 
+    --shadow-bottom-only: 0 10px 15px -12px rgba(0, 0, 0, 0.2);
 
 
 }
@@ -46,3 +47,4 @@ body {}
 @utility column {
     @apply flex flex-col
 }
+
