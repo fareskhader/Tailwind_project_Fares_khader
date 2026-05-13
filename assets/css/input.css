@@ -24,6 +24,8 @@
     --color-Dark_Navy_Blue: #162839;
     --color-Success_Green: #16A34A;
     --color-Midnight_Blue: #2C3E50; 
+    --color-warm_offwhight: #F0EEE8; 
+
     --shadow-bottom-only: 0 10px 15px -12px rgba(0, 0, 0, 0.2);
 
 
@@ -47,4 +49,32 @@ body {}
 @utility column {
     @apply flex flex-col
 }
+h1 {
+    font-size: 3.625rem;
+    line-height: 4rem;
+    font-weight: 700;
+}
 
+h2 {
+    font-size: 2.5rem;
+    line-height: 3.125rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
