@@ -36,7 +36,7 @@
         </div>
     </header>
     <main>
-        <div class="w-full h-full row ">
+        <div class="w-full h-full flex ">
             <section class="left_section column max-lg:hidden gap-[8px] p-6 w-[25%] bg-Warm_Gray">
                 <div class="row gap-3 mb-8">
                     <img class="w-10" src="../assets/images/system_alerts/Background.svg" alt="dustra logo">
@@ -106,18 +106,175 @@
                     </ul>
                 </div>
                 <div class="column h-[800px] justify-end ">
-                     <button class="bg-teprimary border-[1px]  py-3 px-8 rounded 
+                    <button class="bg-teprimary border-[1px]  py-3 px-8 rounded 
                          hover:bg-teprimary/90 transition-all duration-150 active:scale-90 
                         "><a class="text-white " href="#">Export Report</a>
                     </button>
                 </div>
             </section>
-            <section class="right_section w-[75%] pt-[48px] px-[62px]">
-                <div></div>
+            <section class=" column right_section lgw-[75%] pt-[48px] px-[62px] bg-offwhite gap-12">
+                <div class="md:row  justify-between">
+                    <div class="max-md:text-center">
+                        <span class="text-[11px] text-[#43474C] tracking-wider  font[600]">SYSTEM PERFORMANCE</span>
+                        <h1>System Alerts</h1>
+                    </div>
+                    <div class="row max-md:column max-md:gap-[8px] gap-[16px] pt-8  max-md:w-full">
+
+                        <button class=" bg-Muted_Gray  py-2 px-3 rounded-xl  
+                         hover:bg-teprimary/80  transition-all duration-250 active:scale-90 
+                        "><a class="text-[#1C1C18] " href="#">Mark all as read</a></button>
+                        <button class="bg-teprimary border-[1px]   py-2 px-3 rounded-xl
+                         hover:bg-teprimary/90 transition-all duration-150 active:scale-90 
+                        "><a class="text-white " href="#">Filter Results</a></button>
+                    </div>
+                </div>
+                <div class="column gap-4 ">
+                    <div class="column gap-[16px]">
+                        <div class=" bg-white row p-6 border-l-[#93000A] border-l-4 rounded-xl">
+                            <div class="max-md:column max-md:gap-4 w-full row justify-between  ">
+                                <div class="row bg-red w-[60%] max-md:w-[100%]   gap-4">
+                                    <img src="../assets/images/system_alerts/Background (1).svg"
+                                        alt="exceclamation mark">
+                                    <div class="column ">
+                                        <h4 class=" text-[18px]">High dust</h4>
+                                        <p class="text-[14px] text-ashen">Accumulated particulate matter exceeding
+                                            12.5g/m² on Array 04.
+                                            Critical cleaning required to prevent long-term degradation.</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class=" max-md:row max-md:w-[90%] max-md:justify-between md:column max-md:row max-md:justify-between">
+                                    <span
+                                        class=" bg-[#FFDAD6] py-0.5 px-1 font-[500] rounded text-center leading-4 tracking-wider text-[#93000A] text-[11px]">CRITICAL</span>
+                                    <span class="text-ashen text-[10px]">12 mins ago</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="bg-white row p-6 border-l-[#360F00] border-l-4 rounded-xl">
+                            <div class="max-md:column max-md: gap-4 w-full row justify-between">
+
+                                <div class="row bg-red w-[60%] max-md:w-[100%]   gap-4">
+                                    <img src="../assets/images/system_alerts/Background (2).svg"
+                                        alt="exceclamation mark">
+
+                                    <div class="column">
+                                        <h4 class="text-[18px]">Efficiency drop</h4>
+
+                                        <p class="text-[14px] text-ashen">
+                                            Conversion efficiency fell below 18.2% on central inverter B.
+                                            Investigating potential thermal clipping or wiring resistance.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="max-md:row max-md:w-[90%] max-md:justify-between md:column max-md:row max-md:justify-between">
+
+                                    <span
+                                        class="bg-[#6A2806] py-0.5 px-1 font-[500] rounded text-white text-center leading-4 tracking-wider text-[11px]">
+                                        ALERT
+                                    </span>
+
+                                    <span class="text-ashen text-[10px]">
+                                        1 hour ago
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="bg-white row p-6 border-l-[#360F00] border-l-4 rounded-xl">
+                            <div class="max-md:column max-md:gap-4 w-full row justify-between">
+
+                                <div class="row bg-red w-[60%] max-md:w-[100%]   gap-4">
+                                    <img src="../assets/images/system_alerts/Background (3).svg"
+                                        alt="exceclamation mark">
+
+                                    <div class="column">
+                                        <h4 class="text-[18px]">Sensor warning</h4>
+
+                                        <p class="text-[14px] text-ashen">
+                                            Pyranometer S-92 intermittent signal loss. Data continuity at risk
+                                            for irradiance benchmarking.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="max-md:row max-md:w-[90%] max-md:justify-between md:column max-md:row max-md:justify-between">
+
+                                    <span
+                                        class="bg-[#6A2806] py-0.5 px-1 font-[500] rounded text-white text-center leading-4 tracking-wider text-[11px]">
+                                        WARNING
+                                    </span>
+
+                                    <span class="text-ashen text-[10px]">
+                                        3 hours ago
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="column p-8 gap-6">
+                                    <span class="text-[11px] tracking-wider ml-4 font[600]">SYSTEM HEALTH CONTEXT</span>
+                                    <div class="grid md:grid-cols-3 gap-8">
+                                        <div class="flex-1 bg-white column rounded-lg p-4 gap-1">
+                                            <span class="text-3xl text-[#162839] max-md:font-bold">94.2%</span>
+                                <span class="text-cool_charcoal_gray text-[12px]">Before Dust Level</span>
+                            </div>
+                               <div class="flex-1 bg-white column rounded-lg p-4 gap-1">
+                                            <span class="text-3xl text-[#BA1A1A] max-md:font-bold">01</span>
+                                <span class="text-cool_charcoal_gray text-[12px]">CRITICAL ACTIONS</span>
+                            </div>
+                            <div class="flex-1 bg-white column rounded-lg p-4 gap-1">
+                                            <span class="text-3xl text-[#491700] max-md:font-bold">02</span>
+                                <span class="text-cool_charcoal_gray text-[12px]">PENDING WARNINGS</span>
+                            </div>
+                                    </div>
+                </div>
             </section>
         </div>
     </main>
+<footer>
+        <section class="footer_section bg-[#FAFAF9] py-[48px]">
+            <div class="mycontainer  flex flex-col gap-[32px] ">
+                <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4  gap-12 max-lg:gap-3">
 
+                    <div class="column gap-[20px] max-md:gap-3   max-lg:rounded-2xl   max-lg:p-5">
+                        <span class="text-[18px] text-[#0F172A]  ">DUSTRA</span>
+                        <p class="text-ashen w-[80%]">Architectural Precision in Solar
+                            Maintenance.</p>
+
+                    </div>
+                    <div class="column gap-[23px] max-md:gap-3   max-lg:rounded-2xl   max-lg:p-5">
+                        <span >Platform</span>
+                        <ul class="column gap-[13px]">
+                            <li class="text-ashen hover:text-boldashen duration-500 transition-all"><a href="#">System</a></li>
+                            <li class="text-ashen hover:text-boldashen duration-500 transition-all"><a href="#">Features</a></li>
+                            <li class="text-ashen hover:text-boldashen duration-500 transition-all"><a href="#">Security</a></li>
+                        </ul>
+                    </div>
+                    <div class="column gap-[23px] max-md:gap-3  max-lg:rounded-2xl   max-lg:p-5">
+                        <span >company</span>
+                        <ul class="column gap-[13px]">
+                            <li class="text-ashen hover:text-boldashen duration-500 transition-all"><a href="#">About</a></li>
+                            <li class="text-ashen  hover:text-boldashen duration-500 transition-all"><a href="#">Help</a></li>
+                            <li class="text-ashen hover:text-boldashen duration-500 transition-all"><a href="#">Social</a></li>
+                        </ul>
+                    </div>
+                    <div class="column flex-1">
+                    <img class="w-fit h-full object-cover  object-bottom rounded-xl " src="../assets/images/system_alerts/Container (2).svg" alt="">
+                </div>
+                </div>
+             
+            </div>
+        </section>
+    </footer>
 </body>
 
 </html>
