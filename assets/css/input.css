@@ -27,6 +27,7 @@
     --color-warm_offwhight: #F0EEE8; 
     --color-Muted_Gray: #635E5599;
     --color-Forest_Green: #4A7C59;
+    --color-Warm_Gray: #F5F5F4;
 
     --shadow-bottom-only: 0 10px 15px -12px rgba(0, 0, 0, 0.2);
 
@@ -66,7 +67,7 @@ h2 {
 h3 {
     font-size: 1.5rem;
     line-height: 2rem;
-    font-weight: 600;
+    
 }
 
 h4 {
