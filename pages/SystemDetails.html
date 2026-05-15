@@ -4,15 +4,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/output.css">
-    <link rel="stylesheet" href="assets/css/input.css">
-    <title>Home Page</title>
+    <link rel="stylesheet" href="../assets/css/output.css">
+    <link rel="stylesheet" href="../assets/css/input.css">
+    <title>System details</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
-    
+    <header class="shadow">
+        <div class="mycontainer  py-[13.5px] w-[calc(100% - 32px)]  justify-between row navbar">
+            <div class="flex gap-[32px] ">
+                <span
+                    class="text-boldashen text-[18px] font-inter leading-snug tracking-[0.2px] font-[600]">DUSTRA</span>
+
+            </div>
+            <div class="pages_linkes max-md:hidden">
+                <ul class="row flex gap-[24px]">
+                    <li class=" text-ashen font-semibold hover:underline hover:underline-offset-4"><a
+                            href="../index.html">Home</a></li>
+                    <li class="text-boldashen hover:underline hover:underline-offset-4"><a
+                            href="pages/SystemDetails.html">System</a></li>
+                    <li class="text-ashen hover:underline hover:underline-offset-4">Features</li>
+                    <li class="text-ashen hover:underline hover:underline-offset-4">Dashboard</li>
+                    <li class="text-ashen hover:underline hover:underline-offset-4">Contact</li>
+                </ul>
+            </div>
+            <div class="nav_icons row gap-[8px] ">
+                <img src="../assets/images/logos/navbar/bell_logo.svg" alt="bell_logo">
+                <img src="../assets/images/logos/navbar/settings_logo.svg" alt="settings_logo">
+                <img src="../assets/images/logos/navbar/profile_logo.svg" alt="profile_logo">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="details_page_first_section row mycontainer">
+            <div>
+                <ul class="row gap-[6px] py-[40px]">
+                    <li><a class="text-Medium_Slate_Gray" href="../index.html">Home</a></li>
+                    <span>></span>
+                    <li><a href="#">System</a></li>
+                </ul>
+            </div>
+        </section>
+        <section
+            class="details_page_second_section gap-[32px] grid md:grid-cols-1 lg:row  px-[16px] m-auto lg:mycontainer ">
+            <div class="left_section column gap-[32px] lg:w-[45%]">
+                <img class="max-lg:w-[90%] max-lg:m-auto"
+                    src="../assets/images/system_details_images/Diagram Placeholder.svg" alt="">
+                <div class="p-[24px] column gap-[24px] bg-offwhite rounded-lg">
+                    <span class="text-[11px] tracking-wider text-ashen ml-4 font[600]">ACTIVE SYSTEM COMPONENTS</span>
+                    <div class="bg-white row py-[20px] px-[16px] justify-between rounded-xl">
+                        <div class="row gap-[10px]">
+                            <img class="w-[20px]" src="../assets/images//logos/details_page_logos/radio_icon.svg"
+                                alt="camera_icon">
+                            <span class="font-[500] ">LIDAR Dust Sensors (4x)</span>
+                        </div>
+                        <div>
+                            <span
+                                class="text-[11px] py-1 px-2  tracking-wider ml-4 font[600] bg-Very_Light_Mint_Green rounded-2xl bg-Very_Light_Mint_Green ">ONLINE</span>
+                        </div>
+                    </div>
+                    <div class="bg-white row py-[20px] px-[16px] justify-between rounded-xl">
+                        <div class="row gap-[10px]">
+                            <img class="w-[20px]" src="../assets/images/logos/details_page_logos/Ai_icon.svg"
+                                alt="camera_icon">
+                            <span class="font-[500]  ">Edge Processing Unit</span>
+                        </div>
+                        <div>
+                            <span
+                                class="text-[11px] py-1 px-2  tracking-wider ml-4 font[600] bg-Very_Light_Mint_Green rounded-2xl bg-Very_Light_Mint_Green ">ONLINE</span>
+
+                        </div>
+                    </div>
+                    <div class="bg-white row py-[20px] px-[16px] justify-between rounded-xl">
+                        <div class="row gap-[10px]">
+                            <img class="w-[20px]" src="../assets/images/logos/details_page_logos/cleaning_icon.svg"
+                                alt="camera_icon">
+                            <span class="font-[500]  ">Robotic Squeegee Hub</span>
+                        </div>
+                        <div>
+                            <span
+                                class="text-[11px] py-1 px-2 tracking-wider ml-4 font[600] bg-Light_Creamy_Yellow rounded-2xl ">IDLE</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="right_section column gap-[32px] lg:w-[55%]">
+                <div class="column items-start gap-[16px]">
+                    <div class="row gap-3">
+                        <span
+                            class="text-white text-[10px] tracking-wider bg-Dark_Navy_Blue px-2 py-[2px] rounded-md gap-[12px]">ACTIVE</span>
+                        <span class="text-Medium_Slate_Gray tracking-wider font-[10px]">SYSTEM ID: DS-2024-X</span>
+                    </div>
+                    <h2 class="text-[26px]">
+                        AI-Based Dust Detection System
+                    </h2>
+                    <p class="text-Dark_Taupe   w-[90%] ">Real-time particulate analysis using neural networks to
+                        optimize
+                        cleaning cycles and maximize photovoltaic output across the
+                        primary array.</p>
+                </div>
+                <div class="grid  md:grid-cols-3 gap-[16px] ">
+                    <div class="column bg-offwhite gap-[4px] p-6 rounded-lg">
+                        <span
+                            class="text-Medium_Slate_Gray text-[11px] leading-[16.5px] tracking-[0.88px]">EFFICIENCY</span>
+                        <span class="text-[24px]  font-[600]">98.4%</span>
+
+
+                        <span class="text-Success_Green text-[10px]">+1.2% VS PREV</span>
+                    </div>
+                    <div class="column bg-offwhite gap-[4px] p-6 rounded-lg">
+                        <span class="text-Medium_Slate_Gray text-[11px] leading-[16.5px] tracking-[0.88px]">DUST
+                            LEVEL</span>
+                        <div>
+                            <span class="text-[24px]  font-[700]">12</span>
+                            <span class="text-Medium_Slate_Gray text-[14px]">mg/m²</span>
+                        </div>
+                        <span class="text-[#EA580C] text-[10px]">MODERATE</span>
+                    </div>
+                    <div class="column bg-offwhite gap-[4px] p-6 rounded-lg">
+                        <span class="text-Medium_Slate_Gray text-[11px] leading-[16.5px] tracking-[0.88px]">LAST
+                            CLEAN</span>
+                        <div>
+                            <span class="text-[24px]  font-[700]">4h</span>
+                            <span class="text-Medium_Slate_Gray text-[14px]">ago</span>
+                        </div>
+                        <span class="text-Medium_Slate_Gray text-[10px]">AUTO MODE</span>
+                    </div>
+                </div>
+                <div class="grid  md:grid-cols-3 gap-[16px] p-[32px] bg-Midnight_Blue rounded-lg">
+                     
+                    <div class=" row max-md:justify-center text-center bg-[#162839] rounded-lg">
+                        <span class="text-white   md:w-full text-[16px] py-[13px] px-[53px] font-[600] ">Start Manual Cycle</span>
+                    </div>
+                    <div class="row max-md:justify-center text-center py-[13px] px-[53px] border-1 text-white rounded-lg">
+                        <span class="text-white text-center lg:m-auto lg:w-[80%] md:w-full text-[16px] font-[600] bg-green">Emergency
+                            Stop</span>
+                    </div>
+                    <div class="row max-md:justify-center text-center py-[13px] px-[53px]  text-white rounded-lg">
+                        <div class="row justify-center gap-1 ml-[-12px]">
+                            <img class="w-[40px]" src="../assets/images/logos/details_page_logos/toggle_on.svg" alt="">
+                            <span class="text-[14px] font-[700]">Auto-
+                                Optimization</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="row justify-between shadow-bottom-only">
+                        <div class="row gap-3">
+                            <img class="w-[16.5px]" src="../assets/images/logos/details_page_logos/execlamation_mark_icon.svg" alt="execlamation_mark_icon">
+                            <span class="text-[16px] font-[700] py-6 text-Dark_Navy_Blue">System Details</span>
+                        </div>
+                        <div>
+                            <img src="../assets/images/logos/details_page_logos/list_arrow_icon.svg" alt="list arrow icon">
+                        </div>
+                    </div>
+                    <div class="row justify-between shadow-bottom-only">
+                        <div class="row gap-3">
+                            <img class="w-[16.5px]" src="../assets/images/logos/details_page_logos/sensor.svg" alt="sensor icon">
+                            <span class="text-[16px] font-[700] py-6 text-Dark_Navy_Blue">Sensors Configuration</span>
+                        </div>
+                        <div>
+                            <img src="../assets/images/logos/details_page_logos/list_arrow_icon.svg" alt="list_arrow_icon">
+                        </div>
+                    </div>
+                    <div class="row justify-between shadow-bottom-only">
+                        <div class="row gap-3">
+                            <img class="w-[16.5px]" src="../assets/images/logos/details_page_logos/recycl_icon.svg" alt="recycl icon">
+                            <span class="text-[16px] font-[700] py-6 text-Dark_Navy_Blue">Maintenance Logs</span>
+                        </div>
+                        <div>
+                            <img src="../assets/images/logos/details_page_logos/list_arrow_icon.svg" alt="list_arrow_icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer_section  py-[48px]">
+            <div class="mycontainer  flex flex-col gap-[32px] ">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-12 max-lg:gap-3">
+                    <div class="column gap-[20px] md:col-span-2 max-md:gap-3  max-lg:p-5">
+                        <span class="text-[18px] text-[#0F172A]  ">DUSTRA</span>
+                        <p class="text-ashen md:w-[80%] lg:w-[60%]">© 2024 DUSTRA. Architectural Precision in
+                            Solar Maintenance. Advanced AI for high-yield
+                            renewable infrastructure.</p>
+
+                    </div>
+                    <div class="column gap-[23px] max-md:gap-3  max-lg:p-5">
+                        <span class="text-[14px] font-[700]">Navigation</span>
+                        <div class="column gap-[13px] ">
+                            <ul class="flex  lg:column gap-[13px] ">
+                                <li class="text-ashen max-lg:w-[50%] hover:text-boldashen duration-500 transition-all">
+                                    <a href="#">About</a></li>
+                                <li class="text-boldashen duration-500 transition-all"><a href="#">System</a></li>
+                            </ul>
+                            <ul class="flex  lg:column gap-[13px]">
+                                <li class="text-ashen max-lg:w-[50%] hover:text-boldashen duration-500 transition-all">
+                                    <a href="#">Help</a></li>
+                                <li class="text-ashen hover:text-boldashen duration-500 transition-all"><a
+                                        href="#">Social</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column gap-[23px] max-md:gap-3  max-lg:p-5">
+                        <span class="text-[14px] font-[700]">Technical Support</span>
+                        <ul class="column gap-[13px]">
+                            <li class="text-ashen  hover:text-boldashen duration-500 transition-all">Global Hub: +1
+                                (800) DUSTRA-AI Specs</li>
+                            <li class="text-ashen hover:text-boldashen duration-500 transition-all">service@dustra.tech
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </footer>
 </body>
