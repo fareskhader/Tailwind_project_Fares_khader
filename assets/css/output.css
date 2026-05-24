@@ -14,6 +14,7 @@
     --color-yellow-300: oklch(90.5% 0.182 98.111);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-gray-300: oklch(87.2% 0.01 258.338);
+    --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -29,6 +30,7 @@
     --text-4xl--line-height: calc(2.5 / 2.25);
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
+    --tracking-wide: 0.025em;
     --tracking-wider: 0.05em;
     --tracking-widest: 0.1em;
     --leading-snug: 1.375;
@@ -374,6 +376,9 @@
   .w-\[30px\] {
     width: 30px;
   }
+  .w-\[32px\] {
+    width: 32px;
+  }
   .w-\[40px\] {
     width: 40px;
   }
@@ -415,6 +420,9 @@
   }
   .w-\[128px\] {
     width: 128px;
+  }
+  .w-\[300px\] {
+    width: 300px;
   }
   .w-\[full\] {
     width: full;
@@ -578,6 +586,10 @@
   .rounded-xl {
     border-radius: var(--radius-xl);
   }
+  .rounded-l {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+  }
   .rounded-l-3xl {
     border-top-left-radius: var(--radius-3xl);
     border-bottom-left-radius: var(--radius-3xl);
@@ -660,6 +672,9 @@
   }
   .bg-background {
     background-color: var(--color-background);
+  }
+  .bg-gray-700 {
+    background-color: var(--color-gray-700);
   }
   .bg-offwhite {
     background-color: var(--color-offwhite);
@@ -873,6 +888,9 @@
   .pb-\[-4px\] {
     padding-bottom: -4px;
   }
+  .pb-\[40px\] {
+    padding-bottom: 40px;
+  }
   .pl-4 {
     padding-left: calc(var(--spacing) * 4);
   }
@@ -887,6 +905,9 @@
   }
   .text-left {
     text-align: left;
+  }
+  .align-bottom {
+    vertical-align: bottom;
   }
   .font-inter {
     font-family: var(--font-inter);
@@ -960,6 +981,10 @@
     --tw-leading: 10px;
     line-height: 10px;
   }
+  .leading-\[15px\] {
+    --tw-leading: 15px;
+    line-height: 15px;
+  }
   .leading-\[16\.5px\] {
     --tw-leading: 16.5px;
     line-height: 16.5px;
@@ -1019,6 +1044,10 @@
   .tracking-\[0\.88px\] {
     --tw-tracking: 0.88px;
     letter-spacing: 0.88px;
+  }
+  .tracking-wide {
+    --tw-tracking: var(--tracking-wide);
+    letter-spacing: var(--tracking-wide);
   }
   .tracking-wider {
     --tw-tracking: var(--tracking-wider);
@@ -1094,6 +1123,9 @@
   .text-\[\#BA1A1A\] {
     color: #BA1A1A;
   }
+  .text-\[\#C4C6CD\] {
+    color: #C4C6CD;
+  }
   .text-\[\#E5E2DC\] {
     color: #E5E2DC;
   }
@@ -1102,6 +1134,9 @@
   }
   .text-\[\#EE8F65\] {
     color: #EE8F65;
+  }
+  .text-\[\#\] {
+    color: #;
   }
   .text-\[Light_Steel_Blue\] {
     color: Light Steel Blue;
